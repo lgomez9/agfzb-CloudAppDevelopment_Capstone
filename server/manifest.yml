@@ -1,11 +1,11 @@
   applications:
-  - name: djangoapp
+  - name: lg97-djangoapp
     routes:
-      - route: $HOST.$DOMAIN
+      - route: lg97.us-south.cf.appdomain.cloud
     memory: 128M
     buildpack: python_buildpack
-  - name: djangoapp-nginx
+  - name: lg-djangoapp-nginx
     routes:
-      - route: $HOST.$DOMAIN/static
+      - route: lg97.us-south.cf.appdomain.cloud/static
     memory: 128M
     buildpack: staticfile_buildpack
